@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+:root {
+      --cor-primaria: #3399ff;
+      --cor-secundaria: white;
+      --cor-terciaria: #003d7a;
+      --cor-cinzento: #6c757d;
+      --cor-verde: #198754;
+      --cor-vermelho: #dc3545;
+      --cor-laranja: #ffa500;
+    }
+
+/* FOOTER UNIVERSIDADE DA MADEIRA */
+.footer-uma {
+  background-color: var(--cor-cinzento);
+  color: var(--cor-secundaria);
+  padding: 1.5rem 1rem;
+  font-size: 0.85rem;
+  text-align: center;
+  border-top: 1px solid #ccc;
+}
+
+.footer-uma a {
+  color: var(--cor-secundaria);
+  text-decoration: underline;
+}
+
+.footer-uma a:hover {
+  color: var(--cor-laranja);
+}
+
+.footer-logos {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.footer-logos img {
+  height: 32px;
+  max-width: 100px;
+  object-fit: contain;
+}
+
+/* Responsivo */
+@media (max-width: 480px) {
+  .footer-uma {
+    font-size: 0.75rem;
+    padding: 1rem 0.5rem;
+  }
+
+  .footer-logos {
+    gap: 1rem;
+  }
+
+  .footer-logos img {
+    height: 28px;
+  }
+}
+
+
+</style>
+
+<body>
+    
+
+<!-- FOOTER UNIVERSIDADE DA MADEIRA -->
+<footer class="footer-uma">
+  <div class="footer-content">
+    <p>© Universidade da Madeira - Gabinete de Desenvolvimento de Aplicações Informáticas</p>
+    <p><a href="#">Proteção de Dados e Termos de Utilização</a></p>
+    <p>Colégio dos Jesuítas, 9000-081 Funchal | Tel: +351 291 209400 | Fax: +351 291 209410</p>
+    <p>Processado em 0.16 segundos - powered by hydra framework</p>
+    <div class="footer-logos">
+      <img src="assets/img/madeira-digital.png" alt="Madeira Digital">
+      <img src="assets/img/posi.png" alt="POSI">
+      <img src="assets/img/eu.png" alt="União Europeia">
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>
